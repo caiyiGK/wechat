@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="wechat">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>wecaht</title>
+    <link href="/lib/ionic/css/ionic.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/common.css">
+    <script src="http://cdn.bootcss.com/jquery/3.0.0/jquery.js"></script>
+    <script src="/lib/ionic/js/ionic.bundle.js"></script>
+    <script src="/lib/ionic/js/ionic.js"></script>
+    <script src="/lib/ionic/js/angular/angular-route.min.js"></script>
+    <script src="js/data/json/messages.json"></script>
+    <script src="js/app.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/directives.js"></script>
+    
+</head>
+<body ng-controller="MainCtrl" class="weChatMain">
+
+<div align-title="center" class="bar bar-header bar-dark">
+    <div class="buttons">
+        <a ng-href="{{common.left.link}}" ng-click="common.left.click()" class="button no-animation button-icon icon {{common.left.icon}}">{{common.left.txt}}</a>
+    </div>
+    <h1 class="h1 title">{{common.title}}</h1>
+    <div class="buttons">
+        <a ng-href="{{common.right.link}}" class="button no-animation button-icon icon {{common.right.icon}}">{{common.right.txt}}</a>
+    </div>
+</div>
+
+<div ng-view></div>
+
+<div class="tabs tabs-icon-top" style="display: {{common.showTabs ? 'display' : 'none'}}">
+    <a class="tab-item active" href="#/" icon-off="ion-ios-chatbubble-outline">
+        <i class="icon ion-ios-chatbubble"></i>
+        微信
+    </a>
+    <a class="tab-item" href="#/contact" icon-off="ion-ios-people-outline">
+        <i class="icon ion-ios-people"></i>
+        通讯录
+    </a>
+    <a class="tab-item" icon-off="ion-ios-paperplane-outline">
+        <i class="icon ion-ios-paperplane"></i>
+        发现
+    </a>
+    <a class="tab-item" icon-off="ion-ios-person-outline">
+        <i class="icon ion-ios-person"></i>
+        我
+    </a>
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+
+<li class="item {{message.role}} " ng-repeat="message in messages">           
+    <div class="item-content">
+        <img ng-src="{{messages.pic}}" alt="">
+        <div class="item-detail" ng-bind="message.content" on-hold="alertt()" ></div>
+    </div>
+    <i class="ion-ios-circle-outline button icon button-icon chatDel"></i>
+    <div class="tip tip-option">
+        <div class="tip-content">
+            <a href="" class="tip-item">复制</a>
+            <a href="" class="tip-item">转发</a>
+            <a href="" class="tip-item">收藏</a>
+            <a href="" class="tip-item">翻译</a>
+            <a href="" class="tip-item">删除</a>
+            <a href="" class="tip-item">更多...</a>
+        </div>
+    </div> 
+</li>

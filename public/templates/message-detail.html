@@ -1,0 +1,16 @@
+<!-- message-detail.html -->
+<ion-view>
+    <ion-content >
+    <ion-refresher on-refresh=""></ion-refresher>
+    <ul class="list chatList">
+        <li class="item {{message.role}}" ng-repeat="message in messages.data">
+            <div class="item-content">
+                <img ng-src="{{messages.pic}}" alt="">
+                <div class="item-detail" ng-bind="message.content"></div>
+            </div>
+        </li>
+    </ul>
+    </ion-content>
+</ion-view>
+
+<div ng-include="input-box.html"></div>

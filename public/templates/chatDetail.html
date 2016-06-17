@@ -1,0 +1,53 @@
+<!-- message-detail.html -->
+<ion-view>
+    <ion-content class="has-footer has-header">
+    
+    <!-- 下拉刷新 -->
+    <ion-refresher on-refresh=""></ion-refresher>
+
+    <!-- 聊条内容 -->
+    <!--
+        show-chat-tab = {{showChatTip}}  显示聊天选贤
+        show-chat-del = {{showChatDel}}  显示删除按钮
+    -->
+    <!-- <ul class="list chatList ">
+        <li class="item {{message.role}} " ng-repeat="message in messages.data">           
+            <div class="item-content">
+                <img ng-src="{{messages.pic}}" alt="">
+                <div class="item-detail" ng-bind="message.content" on-hold="alertt()" ></div>
+            </div>
+            <i class="ion-ios-circle-outline button icon button-icon chatDel"></i>
+            <div class="tip tip-option">
+                <div class="tip-content">
+                    <a href="" class="tip-item">复制</a>
+                    <a href="" class="tip-item">转发</a>
+                    <a href="" class="tip-item">收藏</a>
+                    <a href="" class="tip-item">翻译</a>
+                    <a href="" class="tip-item">删除</a>
+                    <a href="" class="tip-item">更多...</a>
+                </div>
+            </div> 
+        </li>
+    </ul> -->
+
+    
+    <chat-detail-list >
+        <chat-detail-item detail-messages="messages.data"></chat-detail-item>
+    </chat-detail-list>
+
+    </ion-content>
+</ion-view>
+
+<div class="bar bar-footer input-box">
+    <div class="buttons">
+        <button class="button button-icon ion-ios-plus-outline"></button>
+    </div>
+    <label class="item-input-wrapper">
+        <input type="text" placeholder="">
+        <!-- <div id="contenteditable" contenteditable="true" style="overflow-y: scroll; word-break: break-word; word-wrap: break-word;background: #FFF;font-size: 16px;"></div> -->
+    </label>
+    <div class="buttons">
+        <button class="button button-icon ion-android-happy"></button>
+        <button class="button button-icon ion-ios-plus-outline"></button>
+    </div>
+</div>

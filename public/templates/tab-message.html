@@ -1,0 +1,39 @@
+<div style="content{{showMenue ? '' :  '-none_men';}}">
+    
+<!-- tab-message.html -->
+<ion-view ng-controller="messageCtrl">
+    <ion-content >
+        <div class="bar bar-header item-input-inset">
+            <label class="item-input-wrapper">
+                <i class="icon ion-ios-search placeholder-icon"></i>
+                <input type="search" placeholder="搜索">
+            </label>
+        </div>
+        <!-- rj-close-back-drop 是自定义指令 -->
+        <ion-list rj-colse-back-drop class="chat-item">
+            <ion-item class="item-avatar"  ui-sref="messageDetail({messageId:chat.id})" rj-hold-active ng-repeat="chat in chatList"> <!--on-hold="popuMessageOptions($index)"-->
+            
+                <img ng-src="{{chat.pic}}" />
+                <!-- 收到消息后头像小数子 -->
+                <span class="rj-sm-red-icon item-new" ng-show="chat.showHints">
+                    <p ng-bind="chat.noReadMessages"></p>
+                </span>
+
+                <h2 ng-bind="chat.name"></h2>
+
+                <p class="rj-list-p" ng-bind="chat.lastMessage.content"></p>
+    
+                <span class="rj-push-right item-time" ng-bind="message.lastMessage.time"></span>
+                
+                <ion-option-button class="button-positive" ng-hide="chat.showHints" ng-click="setHints(chat)">标为未读</ion-option-button>
+                <ion-option-button class="button-positive" ng-show="chat.showHints" ng-click="setHints(chat)">标为已读</ion-option-button>
+
+                <ion-option-button class="button-assertive" ng-click="deleMsg($index)">删除</ion-option-button>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>
+
+
+</div>
