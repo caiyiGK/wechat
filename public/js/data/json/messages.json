@@ -129,36 +129,43 @@ messages = [
         "friend" : "friend",
         "data" : [
             {
+                "id" : 0,
                 "role" : "firend",
                 "time" : "2016-06-12 21:03",
                 "content" : "列表是一个应用广泛的界面元"
             },
             {
+                "id" : 1,
                 "role" : "my",
                 "time" : "2016-06-12 21:03",
                 "content" : "这个属性声明建立布局过程中如何处理元素中的空白符。值 pre-wrap 和 pre-line 是 CSS 2.1 中新增的。这个属性声明建立布局过程中如何处理元素中的空白符。值 pre-wrap 和 pre-line 是 CSS 2.1 中新增的。这个属性声明建立布局过程中如何处理元素中的空白符。值 pre-wrap 和 pre-line 是 CSS 2.1 中新增的。这个属性声明建立布局过程中如何处理元素中的空白符。值 pre-wrap 和 pre-line 是 CSS 2.1 中新增的。"
             },
             {
+                "id" : 2,
                 "role" : "my",
                 "time" : "2016-06-12 21:03",
                 "content" : "AngularJS"
             },
             {
+                "id" : 3,
                 "role" : "firend",
                 "time" : "2016-06-12 21:03",
                 "content" : "AngularJS 教程 AngularJS 通过新的属性和表达式扩展了 HTML。 ations)。 AngularJS 学习起来非常..."
             },
             {
+                "id" : 4,
                 "role" : "my",
                 "time" : "2016-06-12 21:03",
                 "content" : "AngularJS 教程 AngularJS 通过新的属性和表达式扩展了 HTML。 AngularJS 可以构建一个单一页面应用程序(SPAs:Single Page Applications)。 AngularJS 学习起来非常..."
             },
-            {
+            {   
+                "id" : 5,
                 "role" : "firend",
                 "time" : "2016-06-12 21:03",
                 "content" : "AngularJS 教程 AngularJS 通过新的属性和表达式扩展了 HTML。 JS 学习起来非常..."
             },
             {
+                "id" : 6,
                 "role" : "my",
                 "time" : "2016-06-12 21:03",
                 "content" : "AngularJS 教程 AngularJS 通过新的属性和表达式扩展了 HTML。 AngularJS 可以构建一个单一页面应用程序(SPAs:Single Page Applications)。 AngularJS 学习起来非常..."
@@ -172,36 +179,43 @@ messages = [
         "friend" : "friend",
         "data" : [
             {
+                "id" : 0,
                 "role" : "firend",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"
             },
             {
+                "id" : 1,
                 "role" : "my",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"
             },
             {
+                "id" : 2,
                 "role" : "my",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"
             },
             {
+                "id" : 3,
                 "role" : "firend",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"
             },
             {
+                "id" : 4,
                 "role" : "my",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"
             },
             {
+                "id" : 5,
                 "role" : "firend",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"
             },
             {
+                "id" : 6,
                 "role" : "my",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"
@@ -215,36 +229,43 @@ messages = [
         "friend" : "friend",
         "data" : [
             {
+                "id" : 0,
                 "role" : "firend",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"
             },
             {
+                "id" : 1,
                 "role" : "my",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"
             },
             {
+                "id" : 2,
                 "role" : "my",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"
             },
             {
+                "id" : 3,
                 "role" : "firend",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"
             },
             {
+                "id" : 4,
                 "role" : "my",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"
             },
             {
+                "id" : 5,
                 "role" : "firend",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"
             },
             {
+                "id" : 6,
                 "role" : "my",
                 "time" : "2016-06-12 21:03",
                 "content" : "12312456465456456456456456456456456"

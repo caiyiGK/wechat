@@ -36,7 +36,7 @@
 .chatList .item .tip{position: absolute;background: #000;z-index: 10;border-radius: 5px;top: -30px;display: none;}
 .chatList .item .item-content .item-detail::before{position: absolute;display: block;content: '';width: 10px;height: 10px;transform: rotate(45deg);-webkit-transform: rotate(45deg);border: 1px solid #000;background: #000;z-index: 200;top: -20px;display: none;}
 .chatList .item .tip .tip-content{display: -webkit-flex;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: center;}
-.chatList .item .tip a{color: #FFF;text-decoration: none;font-size:12px;-webkit-box-flex: 1;flex: 1;display: block;max-width: 60px;white-space: nowrap;padding: 3px 10px;border-right: 1px solid #FFF;}
+.chatList .item .tip a{color: #FFF;text-decoration: none;font-size:14px;-webkit-box-flex: 1;flex: 1;display: block;max-width: 60px;white-space: nowrap;padding: 3px 10px;border-right: 1px solid #FFF;}
 .chatList .item .tip a:last-child{border-right:none;}
 
 .chatList .my .tip{right: 4%;}
@@ -48,12 +48,12 @@
 .chatList .item.bottom .tip{top: auto;bottom: -30px;}
 .chatList .item.bottom .item-detail::before{top: auto;bottom: -20px;}
 
-.showChatDel .item .chatDel{display: block;}
-.showChatDel .item .item-content{transform: translate3d(35px, 0, 0);-webkit-transform: translate3d(35px, 0, 0);}
+.show-chat-del .item .chatDel{display: block;}
+.show-chat-del .item .item-content{transform: translate3d(35px, 0, 0);-webkit-transform: translate3d(35px, 0, 0);}
 
-.chatList .item-tip{z-index: 100;}
-.chatList .item-tip .tip{display:block;}
-.chatList .item-tip .item-content .item-detail::before{display: block;}
+.chatList .item-tip-on{z-index: 100;}
+.chatList .item-tip-on .tip{display:block;}
+.chatList .item-tip-on .item-content .item-detail::before{display: block;}
 
 /* friend-list */
 .friend-list .item-tab{padding: 5px 10px 5px 50px;position: relative;max-height: 52px;line-height: 32px;}

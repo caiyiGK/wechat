@@ -1,4 +1,7 @@
 angular.module('wechat.controllers', [])
+    .run(function($rootScope) {
+
+    })
     .controller('MainCtrl', function ($scope, $state, $stateParams) {
         $scope.common = {
             title: '微信',
@@ -12,7 +15,8 @@ angular.module('wechat.controllers', [])
                 txt: '',
                 link: ''
             },
-            showTabs : true
+            showTabs : true,
+            showChatDel : false
         };
     })
     // 聊天列表

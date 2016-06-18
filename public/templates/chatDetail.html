@@ -31,7 +31,7 @@
     </ul> -->
 
     
-    <chat-detail-list >
+    <chat-detail-list ng-class="{ 'show-chat-del' : common.showChatDel }">
         <chat-detail-item detail-messages="messages.data"></chat-detail-item>
     </chat-detail-list>
 
