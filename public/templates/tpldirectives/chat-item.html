@@ -1,10 +1,10 @@
 
-<li class="item {{message.role}} " ng-repeat="message in messages">           
+<li class="item {{message.role}}" ng-click="cahtDetailSelect()" ng-repeat="message in messages">           
     <div class="item-content">
         <img ng-src="{{messages.pic}}" alt="">
         <div class="item-detail" detailTip ng-bind="message.content"></div>
     </div>
     <i class="ion-ios-circle-outline button icon button-icon chatDel"></i>
     <!-- 内容Tip -->
-    <chat-tip detail-id="message"></chat-tip>
+    <chat-tip></chat-tip>
 </li>

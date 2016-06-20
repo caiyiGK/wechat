@@ -64,3 +64,6 @@
 /* tabs-footer */
 .tabs-footer a.tab-item.active,
 .tabs-footer a.tab-item.activated{color: green;}
+
+/* user */
+.user-pic .item-avatar img{max-width: 50px;max-height: 50px;border-radius: 0px;top: 10px;left: 10px;}

@@ -12,6 +12,15 @@ angular.module('wechat.routes', ['ngRoute'])
             })
             .when('/contact', {
                 templateUrl : 'templates/chatContact.html',
+                controller : 'chatContactController'
+            })
+            .when('/find', {
+                templateUrl : 'templates/chatFind.html',
+                controller : 'chatFindController'
+            })
+            .when('/user', {
+                templateUrl : 'templates/chatUser.html',
+                controller : 'chatUserController'
             })
             .otherwise({
                 redirectTo: 'templates/index.html'

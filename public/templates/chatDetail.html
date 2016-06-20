@@ -9,31 +9,31 @@
     <!--
         show-chat-tab = {{showChatTip}}  显示聊天选贤
         show-chat-del = {{showChatDel}}  显示删除按钮
-    -->
-    <!-- <ul class="list chatList ">
-        <li class="item {{message.role}} " ng-repeat="message in messages.data">           
+    -->    
+    <chat-detail-list ng-class="{ 'show-chat-del' : common.showChatDel }">
+        <chat-detail-item detail-messages="messages.data"></chat-detail-item>
+    </chat-detail-list>
+
+    <ul class="list chatList" ng-repeat="message in messages.data">
+        <li class="item {{message.role}}" ng-click="cahtDetailSelect()" ng-repeat="message in messages">           
             <div class="item-content">
                 <img ng-src="{{messages.pic}}" alt="">
-                <div class="item-detail" ng-bind="message.content" on-hold="alertt()" ></div>
+                <div class="item-detail" detailTip ng-bind="message.content"></div>
             </div>
             <i class="ion-ios-circle-outline button icon button-icon chatDel"></i>
+            <!-- 内容Tip -->
             <div class="tip tip-option">
                 <div class="tip-content">
                     <a href="" class="tip-item">复制</a>
                     <a href="" class="tip-item">转发</a>
                     <a href="" class="tip-item">收藏</a>
-                    <a href="" class="tip-item">翻译</a>
-                    <a href="" class="tip-item">删除</a>
-                    <a href="" class="tip-item">更多...</a>
-                </div>
-            </div> 
+                    <a class="tip-item">翻译</a>
+                    <a ng-click="TIP.del()" class="tip-item">删除</a>
+                    <a ng-click="TIP.delAll()" class="tip-item">更多...</a>
+                </div> 
+            </div>
         </li>
-    </ul> -->
-
-    
-    <chat-detail-list ng-class="{ 'show-chat-del' : common.showChatDel }">
-        <chat-detail-item detail-messages="messages.data"></chat-detail-item>
-    </chat-detail-list>
+    </ul>
 
     </ion-content>
 </ion-view>
@@ -44,7 +44,6 @@
     </div>
     <label class="item-input-wrapper">
         <input type="text" placeholder="">
-        <!-- <div id="contenteditable" contenteditable="true" style="overflow-y: scroll; word-break: break-word; word-wrap: break-word;background: #FFF;font-size: 16px;"></div> -->
     </label>
     <div class="buttons">
         <button class="button button-icon ion-android-happy"></button>
