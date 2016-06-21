@@ -1,10 +1,32 @@
-
+<!-- 
 <li class="item {{message.role}}" ng-click="cahtDetailSelect()" ng-repeat="message in messages">           
     <div class="item-content">
         <img ng-src="{{messages.pic}}" alt="">
         <div class="item-detail" detailTip ng-bind="message.content"></div>
     </div>
     <i class="ion-ios-circle-outline button icon button-icon chatDel"></i>
-    <!-- 内容Tip -->
+    < 内容Tip >
     <chat-tip></chat-tip>
 </li>
+ -->
+ <ul class="list chatList" ng-class="{ 'show-chat-del' : showChatDel }">
+    <li class="item {{message.role}}" ng-class="{ 'item-tip-on' : showItems[$index] }" ng-click="cahtDetailSelect($event, $index)" ng-repeat="message in messages">           
+        <div class="item-content">
+            <img ng-src="img/adam.png">
+            <div class="item-detail"  ng-click="chatTip($event, $index)" ng-bind="message.content"></div>
+        </div>
+        <!-- <i class="ion-ios-circle-outline chatDel button_{{$index}}"></i> -->
+        <i class="chatDel {{iconItems[$index] ? 'ion-ios-checkmark' : 'ion-ios-circle-outline'}}"></i>
+        <!-- 内容Tip -->
+        <div class="tip tip-option" ng-show="showItems[$index]">
+            <div class="tip-content">
+                <a href="" class="tip-item">复制</a>
+                <a href="" class="tip-item">转发</a>
+                <a href="" class="tip-item">收藏</a>
+                <a class="tip-item">翻译</a>
+                <a ng-click="TIP.del()" class="tip-item">删除</a>
+                <a ng-click="TIP.delAll($event)" class="tip-item">更多...</a>
+            </div> 
+        </div>
+    </li>
+</ul>

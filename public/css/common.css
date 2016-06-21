@@ -1,10 +1,13 @@
 /* footer */
-.weChatMain .bar-footer{padding: 0px;min-height: 49px;}
+.weChatMain .bar-footer{padding: 0px;min-height: 49px;transition: all 0.4s;-webkit-transition: all 0.4s;}
 .weChatMain .bar-footer button{max-width: 49px;max-height: 49px;overflow: hidden;bottom: 0px;}
 .weChatMain .bar-footer .item-input-wrapper{margin: 10px 0;background: #FFF;padding: 0px;position: relative;}
 .weChatMain .bar-footer .item-input-wrapper input{width: 100%;min-height: 29px;border-radius: 8px;padding: 0 5px;}
 // .weChatMain .bar-footer .item-input-wrapper #contenteditable{width: 100%;min-height: 29px;line-height: 29px;max-height: 100px;background: #FFF;border-radius: 8px;position: absolute;bottom: 0px;}
-.weChatMain .input-box {background: #f1f1f1;}
+.weChatMain .input-box.on {background: #f1f1f1;bottom: 0px;}
+.weChatMain .input-del{background: #FFF;bottom: -49px;}
+.weChatMain .input-box {background: #f1f1f1;bottom: -49px;}
+.weChatMain .input-del.on{background: #FFF;bottom: 0;}
 
 /* chat */
 .chat-item .item .item-content{padding-left: 80px;min-height: 80px;position: relative;}
@@ -21,7 +24,7 @@
 .chatList {background: #FFF;} 
 .icon-pulling{display: none!important;}
 .chatList .item {padding: 0px;border: none;background: none;position: relative;overflow: visible;}
-.chatList .item .chatDel{position: absolute;left: 0px;top: 3px;display: none;}
+.chatList .item .chatDel{position: absolute;left: 10px;top: 10px;display: none;}
 .chatList .item .chatDel::before{font-size: 28px;}
 .chatList .item .item-content{padding: 10px 20% 10px 65px;position: relative;min-height: 60px;transition: all 0.4s;-webkit-transition: all 0.4s;overflow: visible;text-align: left;}
 .chatList .item .item-content img{width: 100%;height: 100%;max-height: 40px;max-width: 40px;border-radius: 5px;position: absolute;left: 10px;top: 10px;}
@@ -33,7 +36,7 @@
 .chatList .item.firend .item-content .item-detail::after{left: -6px;border-right: none;border-top: none;}
 .chatList .item.my .item-content .item-detail::after{right: -6px;left: auto;border-left: none;border-bottom: none;background: #A0ECA0;}
 /*聊天tip*/
-.chatList .item .tip{position: absolute;background: #000;z-index: 10;border-radius: 5px;top: -30px;display: none;}
+.chatList .item .tip{position: absolute;background: #000;z-index: 10;border-radius: 5px;top: -30px;}
 .chatList .item .item-content .item-detail::before{position: absolute;display: block;content: '';width: 10px;height: 10px;transform: rotate(45deg);-webkit-transform: rotate(45deg);border: 1px solid #000;background: #000;z-index: 200;top: -20px;display: none;}
 .chatList .item .tip .tip-content{display: -webkit-flex;display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: center;}
 .chatList .item .tip a{color: #FFF;text-decoration: none;font-size:14px;-webkit-box-flex: 1;flex: 1;display: block;max-width: 60px;white-space: nowrap;padding: 3px 10px;border-right: 1px solid #FFF;}
@@ -51,8 +54,8 @@
 .show-chat-del .item .chatDel{display: block;}
 .show-chat-del .item .item-content{transform: translate3d(35px, 0, 0);-webkit-transform: translate3d(35px, 0, 0);}
 
-.chatList .item-tip-on{z-index: 100;}
-.chatList .item-tip-on .tip{display:block;}
+// .chatList .item-tip-on{z-index: 100;}
+// .chatList .item-tip-on .tip{display:block;}
 .chatList .item-tip-on .item-content .item-detail::before{display: block;}
 
 /* friend-list */
